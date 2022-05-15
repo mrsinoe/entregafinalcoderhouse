@@ -1,0 +1,166 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #8d57b5;
+}
+
+footer a:focus {
+  text-decoration: none;
+  color: #8d57b5;
+}
+
+/*Bucle para bg con paleta*/
+.bg-principal_color {
+  background-color: #8d57b5;
+}
+
+.bg-principal_hover {
+  background-color: #794c9c;
+}
+
+.bg-secundario_color {
+  background-color: #fe7826;
+}
+
+.bg-secundario_dark {
+  background-color: #aa4a0e;
+}
+
+.bg-oscuro {
+  background-color: #212529;
+}
+
+.bg-header1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagenes/bg1.jpg);
+}
+
+.bg-pintura {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagenes/bg2.jpg);
+}
+
+/*Botones*/
+.btn-principal {
+  background: #8d57b5;
+  color: white;
+}
+
+.btn-principal:hover {
+  background: #794c9c;
+  color: white;
+}
+
+/*Bucle para texto con paleta*/
+.text-principal_color {
+  color: #8d57b5;
+}
+
+.text-principal_hover {
+  color: #794c9c;
+}
+
+.text-secundario_color {
+  color: #fe7826;
+}
+
+.text-secundario_dark {
+  color: #aa4a0e;
+}
+
+.text-oscuro {
+  color: #212529;
+}
+
+/* Animaciones con AnimateCSS y propias*/
+.animacionHero1 {
+  -webkit-animation: slideInLeft;
+          animation: slideInLeft;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+.animacionHero2 {
+  -webkit-animation: slideInRight;
+          animation: slideInRight;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+.carta:hover {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+
+/* Servicios -  Precios */
+.card1 {
+  outline: 1px solid #212529;
+  border-radius: 4px;
+  color: #212529;
+}
+
+.card1:hover {
+  background: #fe7826;
+  border-color: #fe7826;
+  color: black;
+}
+
+.card-linea {
+  outline: 1px solid white;
+  border-radius: 4px;
+  color: white;
+}
+
+.card-linea:hover {
+  background: #794c9c;
+  border-color: #794c9c;
+}
+
+.price-text {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .animacionHero1 {
+    -webkit-animation: bounce;
+            animation: bounce;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+  }
+}
+/*# sourceMappingURL=estilo2.css.map */

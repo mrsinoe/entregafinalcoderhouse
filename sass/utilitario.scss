@@ -1,0 +1,77 @@
+// Variables generales
+
+$paleta: (
+    principal_color: #8d57b5,
+    principal_hover: #794c9c,
+    secundario_color: #fe7826,
+    secundario_dark: #aa4a0e,
+    oscuro: #212529,
+);
+
+// Colores generales
+
+$principal_color: #8d57b5;
+$principal_hover: #794c9c;
+$secundario_color: #fe7826;
+$secundario_dark: #aa4a0e;
+$oscuro: #212529;
+
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover{
+        text-decoration: none;
+        color: $principal_color;
+    }
+    &:focus{
+        text-decoration: none;
+        color: $principal_color;
+    }
+}
+
+/*Bucle para bg con paleta*/
+@each $categoria, $colorcito in $paleta {
+    .bg-#{$categoria} {
+        background-color: $colorcito;
+    }
+ }
+
+@mixin bgimage {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+    
+
+.bg-header1{
+    @include bgimage;
+    background-image:url(../imagenes/bg1.jpg);
+}
+
+.bg-pintura{
+    @include bgimage;
+    background-image:url(../imagenes/bg2.jpg);
+}
+
+
+ /*Botones*/
+
+ .btn-principal{
+    background: $principal_color;
+    color: white;
+    &:hover{
+        background: $principal_hover;
+    color: white;
+    }
+}
+
+  /*Bucle para texto con paleta*/
+@each $categoria, $colorcito in $paleta {
+    .text-#{$categoria} {
+        color: $colorcito;
+    }
+ }
+ 

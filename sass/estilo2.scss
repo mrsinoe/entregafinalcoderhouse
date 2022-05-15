@@ -1,0 +1,76 @@
+//General
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body::before {
+    display: block;
+    content: "";
+    height: 60px;
+}
+
+@import "utilitario";
+
+
+/* Animaciones con AnimateCSS y propias*/
+
+.animacionHero1 {
+    animation: slideInLeft;
+    animation-duration: 0.8s;
+}
+
+.animacionHero2 {
+    animation: slideInRight;
+    animation-duration: 0.8s;
+}
+
+.carta:hover {
+    animation: pulse;
+    animation-duration: 0.4s;
+}
+
+/* Servicios -  Precios */
+
+.card1 {
+    outline: 1px solid $oscuro;
+    border-radius: 4px;
+    color: $oscuro;
+    &:hover{
+        background: $secundario_color;
+        border-color: $secundario_color;
+        color: black;
+    }
+}
+
+.card-linea {
+    outline: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    &:hover{
+        background: $principal_hover;
+        border-color: $principal_hover;
+    }
+}
+
+.price-text{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .animacionHero1 {
+        animation: bounce;
+        animation-duration: 0.8s;
+    }
+}
